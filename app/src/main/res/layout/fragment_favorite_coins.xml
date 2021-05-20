@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/blue"
+            android:elevation="10dp"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/toolbarBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Favorite List"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEmptyList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empty Favorite List"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_top" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerFavoriteCoinList"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fadingEdgeLength="15dp"
+            android:layoutAnimation="@anim/layout_animation_fall_down"
+            android:requiresFadingEdge="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_top"
+            tools:listitem="@layout/coin_list_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
