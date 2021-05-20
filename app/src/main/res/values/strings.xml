@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CryptoTracker</string>
+    <string name="symbol_text">Symbol: %s</string>
+    <string name="name_text">Name: %s</string>
+    <string name="no_data">No Data</string>
+    <string name="enter_interval_value">Enter a value for refresh interval</string>
+    <string name="invalid_value">Please enter valid interval value</string>
+    <string name="try_again">Try Again</string>
+</resources>
