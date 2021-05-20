@@ -1,5 +1,5 @@
 # CryptoTracker Project Challenge app
-A Simple Cryptocurrency Price Tracker App with MVVM, Firebase Authentication, Firebase Firestore, Retrofit, LiveData, Lifecycle, Navigation, Dagger2, Room, Kotlin Coroutines
+A Simple crypto currency Price Tracker App with MVVM, Firebase Authentication, Firebase Firestore, Retrofit, LiveData, Lifecycle, Navigation, Dagger2, Room, Kotlin Coroutines
 
 
 ## Demonstration 
